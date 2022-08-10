@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+:root {
+    --amazon-green: rgb(53, 121, 96);
+    --white: rgb(253, 253, 253);
+    --gray: rgb(150, 150, 150);
+    --cerulean: rgb(12, 171, 186);
+    --blue: rgb(11, 142, 146);
+    --sycamore: rgb(146, 161, 67);
+}
+
+body {
+    background-color: var(--gray);
+    color: var(--white);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header Styles Start */
+header {
+    background-color: var(--amazon-green);
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1{
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--cerulean);
+    font-size: 18px;
+}
+
+header nav {
+    margin: 12px 0 0 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 15px;   
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background-color: var(--sycamore);
+    border-radius: 5px;
+}
+/* Header Styles End */
+
+/* About Me Styles Start */
+.about-me {
+    margin: 35px auto 20px;
+}
+
+.about-me .content {
+    display: flex;
+}
+
+.about-me h2{
+    color: var(--amazon-green);
+    border-bottom: 2px solid;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto 35px auto;
+    width: 11%;
+}
+
+.about-me img {
+    margin-left: 100px;
+    margin-right: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.about-me p {
+    margin: 20px 40px;
+    text-align: left;
+    font-size: 20px;
+}
+/* About Me Styles End */
+
+/* Recent Works Style Start */
+.recent-work {
+    margin: 35px auto 20px;
+}
+
+.recent-work h2 {
+    color: var(--amazon-green);
+    border-bottom: 2px solid;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto 35px auto;
+    width: 13%;
+}
+
+.recent-work .works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Recent Works Style End */
+
+/* Contact Info Styles Start */
+.contact-me {
+    margin: 35px auto 20px;
+    flex-wrap: wrap;
+}
+
+.contact-me h2{
+    color: var(--amazon-green);
+    border-bottom: 2px solid;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto 35px auto;
+    width: 12%;
+}
+
+.contact-me ul {
+    display: flex;
+    justify-content: space-evenly; 
+    list-style: none;
+    font-size: 25px;
+}
+
+.contact-me a {
+    text-decoration: none;
+}
+
+.contact-me img {
+    height: 20px;
+    width: 20px;
+}
+/* Contact Info Styles End */
+
+/* Media Query for Smaller Desktop Screens and Smaller */
+@media screen and (max-width: 1024px) {
+    .recent-work .works .run-buddy p {
+        font-size: 14px;
+    }
+    .recent-work .works .horiseon p {
+        font-size: 12px;
+    }
+}
+
+/* Media Query for Tablets and Smaller */
+@media screen and (max-width: 768) {
+    /* No declarations for now */
+}
+
+/* Media Query for Tablets and Smaller */
+@media screen and (max-width: 575px) {
+    .recent-work .works .run-buddy p {
+        font-size: 14px;
+    }
+    .recent-work .works .horiseon p {
+        font-size: 10px;
+    }
+}
