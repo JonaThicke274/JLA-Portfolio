@@ -114,6 +114,59 @@ header nav ul li a:hover {
     justify-content: center;
 }
 
+.recent-work .works .cinematic-spirits {
+    position: relative;
+    text-align: center;
+}
+
+.recent-work .works .cinematic-spirits img {
+    height: auto;
+    width: 75%;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--cerulean);
+    filter: brightness(0.75);
+}
+
+.recent-work .works .cinematic-spirits img:hover {
+    filter: none;
+}
+
+.recent-work .works .cinematic-spirits p {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    bottom: 40px;
+    text-decoration: underline var(--cerulean);
+}
+
+.recent-work .works .horiseon {
+    position: relative;
+    text-align: center;
+}
+
+.recent-work .works .horiseon img {
+    height: auto;
+    width: 50%;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--cerulean);
+    filter: brightness(0.75);
+}
+
+.recent-work .works .horiseon img:hover {
+    filter: none;
+} 
+
+.recent-work .works .horiseon p {
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    bottom: 40px;
+    text-decoration: underline var(--cerulean);
+}
 /* Recent Works Style End */
 
 /* Contact Info Styles Start */
